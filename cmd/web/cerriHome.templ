@@ -1,0 +1,30 @@
+package web
+
+
+templ CerriTemplHome() {
+    @Base() {
+
+<form hx-post="/cerrifix" hx-target="#coso" hx-swap="beforeend">
+<input type="text" name="buscar"></input>
+<br><input type="submit" class="border-2 border-black" >botonubi</input>
+<br>  
+</form>
+
+<table style="width:100%" class="border border-black">
+  <tr class="border border-black">
+    <th class="border border-black">Apellido</th>
+    <th class="border border-black">Telefono</th>
+    <th class="border border-black">Equipo</th>
+    <th class="border border-black">Cable?</th>
+    <th class="border border-black">Pata?</th>
+    <th class="border border-black">Soporte?</th>
+    <th class="border border-black">Control?</th>
+    <th class="border border-black">Total</th>
+  </tr>
+  
+  <div id="coso"></div>
+
+  
+</table>
+    }
+}

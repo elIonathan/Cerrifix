@@ -1,0 +1,17 @@
+package web
+
+import "Cerrifix/tutorial"
+import "strconv"
+
+
+templ Buscador(l tutorial.Reparacione) {
+        <tr>
+        <td class="border border-black">{ l.Apellido }</td>
+        <td class="border border-black">{ l.Telefono }</td>
+        <td class="border border-black">{ l.Equipo }</td>
+        <td class="border border-black"> { strconv.Itoa(int(l.Costo.Int64)) } </td>
+        <td class="border border-black"> {}</td>
+        </tr>
+
+        <div id="coso"></div>
+}

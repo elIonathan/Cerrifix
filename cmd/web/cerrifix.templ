@@ -1,0 +1,46 @@
+package web
+
+templ Agregar() {
+@Base() {
+<form hx-post="/agregar" method="POST">
+  <label >Apellido</label><br>
+  <input name="apellido" type="text" placeholder="John" class="border-2"><br>
+
+  <label>Telefono</label><br>
+  <input name="telefono" type="text" placeholder="Doe" class="border-2" value="+54291"><br><br>
+
+  <label>Equipo</label><br>
+  <input name="equipo" type="text" class="border-2" placeholder="televisor, microondas, etc..."><br><br>
+  
+  <div><input name="cable" type="checkbox" class="border-2">  <label>Cable</label><br> </div>
+  <div><input name="pata" type="checkbox" class="border-2">  <label>Pata</label><br> </div>
+  <div><input name="soporte" type="checkbox" class="border-2">  <label>Soporte</label><br> </div>
+  <div><input name="control" type="checkbox" class="border-2">  <label>Control</label><br> </div>
+<br>
+  <label>Estado</label><br>
+
+<select name="estado">
+
+
+    <option>regular</option>
+    <option>normal</option>
+    <option>impecable</option>
+
+</select><br><br>
+
+  <textarea name="falla" class="border-2" placeholder="falla"></textarea><br><br>
+
+  <input name="fecha" type="date/month/week/time" class="border-2" placeholder="fecha"><br><br>
+
+  <input name="fechaentrega" class="border-2" placeholder="fecha entrega"><br><br>
+
+  <input name="presupuesto" class="border-2" placeholder="presupuesto"><br><br>
+
+  <textarea name="observaciones" class="border-2" placeholder="observaciones"></textarea> <br> <br>
+
+	<button type="submit" class="bg-orange-500 hover:bg-orange-700 text-white py-2 px-4 rounded">Submit</button>
+
+
+</form> 
+}
+}
